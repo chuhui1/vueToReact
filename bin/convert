@@ -1,0 +1,19 @@
+#! /usr/bin/env node
+
+const program = require('commander')
+const pkg = require('../package.json');
+const convert = require('../build.js')
+
+console.log(`\n\n🤖  C-art v ${getPkgVersion()}\n`)
+
+const TXT = String(require('fs-extra').readFileSync(require('path').resolve(__dirname, 'cart.txt')))
+console.log(require('chalk').rgb(255, 20, 147)(TXT))
+
+program
+    .version(pkg.version)
+    .usage('<command> [options]')
+    .option('-a, --app', 'convert app.vue')
+    .option('-p, --page', 'convert page')
+    .parse(process.argv)
+    
+convert(program)
