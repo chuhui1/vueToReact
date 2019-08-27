@@ -4,7 +4,7 @@ import Index from './pages/index/index';
 import './app.less';
 class App extends Component {
   config = {
-    pages: ['pages/page1/page1'],
+    pages: ['pages/index/index'],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
