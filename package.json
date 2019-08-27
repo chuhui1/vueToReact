@@ -1,10 +1,10 @@
 {
   "name": "convert-vue-to-react",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "description": "Convert vue to react",
   "scripts": {
-    "transfo": "node vue-react/build.js",
+    "transfo": "node build.js"
   },
   "author": "chuhui",
   "license": "MIT",

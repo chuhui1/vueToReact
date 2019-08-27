@@ -1,6 +1,7 @@
  # 使用
- <code>convert -a / convert --app</code> 转src 文件夹下app.vue
- <code>convert -p / convert --page</code> 转src 文件夹下page文件夹
+  + <code>npm install convert-vue-to-react -g</code> 安装包
+  + <code>convert -a 或 convert --app</code> 转src 文件夹下app.vue
+  + <code>convert -p 或 convert --page</code> 转src 文件夹下page文件夹
 
 # 规范
 #
